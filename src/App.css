@@ -1,0 +1,237 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  height: 1.5em;
+  padding: 1.5em;
+  width: 10%;
+}
+.logo img {
+  display: block;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background-color: #AE0000;
+  height: 72px;
+  color: white;
+}
+input[type="title"] {
+  background-color: #AE0000;
+  color: white;
+  height: 40px;
+  font-weight: bold;
+}
+.questionary {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.log-in {
+  background-color: rgba(245, 245, 241, .2);
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  border: 1px solid #d7d7d7;
+  margin-top: 10px;
+  box-shadow: 2px 2px 3px #d7d7d7;
+  background: rgba(255,255,255, 0.8);
+  padding-bottom: 25px;
+}
+
+.form-content input::placeholder {
+  opacity: 50%;
+}
+
+.form-content input {
+  width: 90%;
+  height: 52px;
+  font-size: 1.2rem;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+
+.form-content input:focus + label,
+.form-content input:not(:placeholder-shown) + label
+{
+  top: 0;
+  font-size: .8rem;
+  color: indigo;
+  background: #fff;
+  padding: 7px;
+}
+
+.form-content input:focus {
+  border: 2px solid indigo;
+}
+
+/*textarea*/
+
+.form-content textarea::placeholder {
+  opacity: 50%;
+}
+
+.form-content textarea {
+  width: 90%;
+  font-size: 1.2rem;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: -40px;
+}
+
+.form-content textarea {
+  margin-top: 45px;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #d9d9d9;
+  letter-spacing: 1px;
+  transition: .3s;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.form-content textarea:focus + label,
+.form-content textarea:not(:placeholder-shown) + label
+{
+  top: 0;
+  font-size: .8rem;
+  color: indigo;
+  background: #fff;
+  padding: 7px;
+}
+
+.form-content textarea:focus {
+  border: 2px solid indigo;
+}
+
+.answer-title {
+  margin: 20px 0 10px 0;
+}
+
+.add-question {
+  display: flex;
+  width: 60vw;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #d9d9d9;
+  background: #F5F5F1;
+}
+
+.on-save {
+  width: 60vw;
+  margin-top: 10px;
+  background: #AE0000;
+  color: white;
+}
+
+.form-title {
+  width: 100%;
+  text-align: left;
+  padding-left: 10%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.form-select {
+  text-align: left;
+  width: 100%;
+  padding-left: 10%;
+  margin-top: -20px;
+}
+
+.form-select .select-answer::placeholder {
+  opacity: 40%;
+}
+
+.form-select .select-answer {
+  width: 40%;
+  font-size: 1.2rem;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.form-select .select-answer {
+  margin-top: 45px;
+  background: white;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #161616;
+  letter-spacing: 1px;
+  transition: .3s;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.form-select .select-answer:focus + label,
+.form-select .select-answer:not(:placeholder-shown) + label
+{
+  top: 0;
+  font-size: .8rem;
+  color: indigo;
+  padding: 7px;
+}
+
+.form-select .select-answer:focus {
+  border: 2px solid indigo;
+}
+
+.form-select .select-answer::-ms-expand {
+  background: #AE0000;
+}
+
+.form-pages {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  width: 90%;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #d9d9d9;
+  margin-top: 10px;
+}
+
+.remove {
+  height: 20px;
+}
