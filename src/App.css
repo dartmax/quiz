@@ -38,6 +38,8 @@ input[type="title"] {
 .questionary {
   font-weight: bold;
   font-size: 20px;
+  background-color: #AE0000;
+  color: white;
 }
 
 .log-in {
@@ -85,16 +87,6 @@ input[type="title"] {
 }
 
 
-.form-content input:focus + label,
-.form-content input:not(:placeholder-shown) + label
-{
-  top: 0;
-  font-size: .8rem;
-  color: indigo;
-  background: #fff;
-  padding: 7px;
-}
-
 .form-content input:focus {
   border: 2px solid indigo;
 }
@@ -127,22 +119,16 @@ input[type="title"] {
   font-weight: 600;
 }
 
-.form-content textarea:focus + label,
-.form-content textarea:not(:placeholder-shown) + label
-{
-  top: 0;
-  font-size: .8rem;
-  color: indigo;
-  background: #fff;
-  padding: 7px;
-}
-
 .form-content textarea:focus {
   border: 2px solid indigo;
 }
 
 .answer-title {
-  margin: 20px 0 10px 0;
+  width: 100%;
+  text-align: left;
+  padding-left: 10%;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .add-question {
@@ -202,15 +188,6 @@ input[type="title"] {
   transition: .3s;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
-}
-
-.form-select .select-answer:focus + label,
-.form-select .select-answer:not(:placeholder-shown) + label
-{
-  top: 0;
-  font-size: .8rem;
-  color: indigo;
-  padding: 7px;
 }
 
 .form-select .select-answer:focus {
