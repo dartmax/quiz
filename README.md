@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6391ffe4-ddfd-4a7e-9cdb-58b311e7755c/deploy-status)](https://app.netlify.com/sites/stately-chaja-40e8da/deploys)
+
 # 💫 React QUIZ
 
 ```
