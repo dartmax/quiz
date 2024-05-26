@@ -1,28 +1,24 @@
-import React, {
-  FC,
-  ChangeEvent,
-  useState,
-} from 'react'
-import fuelLogo from '../assets/fuel.svg'
+import React, { FC, ChangeEvent, useState } from 'react';
+import fuelLogo from '../assets/fuel.svg';
 
-const  Footer: FC = () => {
-  const [status, setStatus] = useState("New Questionnaire")
-  const [logged, setLogged] = useState(false)
-  let [editMode, setEditMode] = useState(false);
+const Footer: FC = () => {
+  const [status, setStatus] = useState("New Questionnaire");
+  const [logged, setLogged] = useState(false);
+  const [editMode, setEditMode] = useState(false);
 
   const onStatusChange = (e: ChangeEvent<HTMLInputElement>) => {
     setStatus(e.currentTarget.value);
   };
 
   return (
-    <div className="footer-container">
+    <footer className="footer-container" aria-labelledby="footer-title">
       <div className="logo">
-        <img src={fuelLogo} alt="Fuel logo"/>
+        <img src={fuelLogo} alt="Fuel logo" />
       </div>
       <div>
         {!editMode &&
           <div>
-            <span className="questionary" onClick={() => setEditMode(true)}>{status || "New Questionnaire"}</span>
+            <button className="questionary" onClick={() => setEditMode(true)} aria-label="Edit questionnaire title">{status || "New Questionnaire"}</button>
           </div>
         }
         {editMode &&
@@ -33,10 +29,12 @@ const  Footer: FC = () => {
       </div>
       <div className="card">
         {logged && <span>tom@fueled.com</span>}
-        <button className="log-in">LOG IN</button>
+        <button className="log-in" onClick={() => setLogged(!logged)}>
+          {logged ? "LOG OUT" : "LOG IN"}
+        </button>
       </div>
-    </div>
-  )
-}
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

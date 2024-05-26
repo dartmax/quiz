@@ -85,7 +85,7 @@ const Quiz: FC = () => {
     <div className="form">
       <form className="form-container" onSubmit={onSave}>
         {questions.map((question, index) => (
-          <fieldset className="form-content" key={question.id} aria-labelledby={`question-${question.id}`}>
+          <div className="form-content" key={question.id} aria-labelledby={`question-${question.id}`}>
             <label htmlFor={`question-input-${question.id}`} className="form-title">
               Question
             </label>
@@ -97,8 +97,8 @@ const Quiz: FC = () => {
               onChange={(e) => handleQuestionChange(question.id, e.target.value)}
               aria-required="true"
             />
-            <label htmlFor={`answer-type-select-${question.id}`} className="form-title answer-title">
-              Answer Type
+            <label htmlFor={`answer-type-select-${question.id}`} className="answer-title">
+              <span>Answer Type</span>
             </label>
             <div className="form-select">
               <select
@@ -120,7 +120,7 @@ const Quiz: FC = () => {
               <span>{index + 1} of {questions.length}</span>
               <img className="remove" src={removePic} alt="Remove question" onClick={() => setQuestions(questions.filter(item => item.id !== question.id))}/>
             </div>
-          </fieldset>
+          </div>
         ))}
         <button type="button" className="add-question" onClick={addQuestion} aria-label="Add Question">
           <img src={addPic} alt="Add question" />
