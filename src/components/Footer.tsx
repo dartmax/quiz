@@ -15,7 +15,7 @@ const Footer: FC = () => {
       <div className="logo">
         <img src={fuelLogo} alt="Fuel logo" />
       </div>
-      <div>
+      <div className="footer-title">
         {!editMode &&
           <div>
             <button className="questionary" onClick={() => setEditMode(true)} aria-label="Edit questionnaire title">{status || "New Questionnaire"}</button>
